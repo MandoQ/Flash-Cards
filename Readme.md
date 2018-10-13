@@ -6,7 +6,7 @@
 ### App Walk-though
 http://g.recordit.co/KZgafBLk8d.gif
 
-<img src="http://g.recordit.co/KZgafBLk8d.gif" width=300 height=500><br>
+<img src="http://g.recordit.co/KZgafBLk8d.gif" width=400 height=400><br>
 
 
 ## Required
