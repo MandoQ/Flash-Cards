@@ -17,6 +17,12 @@ class ViewController: UIViewController {
     @IBOutlet var choice2: UILabel!
     @IBOutlet var choice3: UILabel!
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let navigationController = segue.destination as! UINavigationController
+        let creationController = navigationController.topViewController as! CreationViewController
+        
+        creationController.flashCardsController = self
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +38,10 @@ class ViewController: UIViewController {
     @IBAction func didTapFlashCard(_ sender: Any) {
         self.frontLabel.isHidden = true
         self.backLabel.isHidden = false
-        print("pressed1")
+    }
+    
+    func updateFlashCard(question: String, answer: String) {
+        
     }
     
     @IBAction func backToQuestion(_ sender: Any) {
